@@ -81,7 +81,7 @@ const NewsList = {
     fetch('https://newsapi.org/v2/top-headlines?country=us',
     {
       headers: { 
-        'Authorization': 'Bearer --API Key--'
+        'Authorization': 'Bearer e338fe63663e4051b11ad8d840bfd55e'
       }
     })
 
@@ -104,7 +104,7 @@ const NewsList = {
       searchNews() {
         let self = this;
         fetch('https://newsapi.org/v2/everything?q='+ self.searchTerm + '&language=en', {
-          headers: {'Authorization': 'Bearer --API key--'}
+          headers: {'Authorization': 'Bearer e338fe63663e4051b11ad8d840bfd55e'}
         })
         
         .then(function(response) {
